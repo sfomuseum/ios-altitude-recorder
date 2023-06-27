@@ -26,6 +26,8 @@ The interface provides controls to record atomic locations or to record all (uni
 
 ![](docs/images/ios-altitude-recorder.png)
 
+As locations are received by the application they are added to the map as `MKPointAnnotation` markers.
+
 ## Output
 
 All the points collected exported as a GeoJSON file and visualized in QGIS.
