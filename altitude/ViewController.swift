@@ -72,7 +72,6 @@ class ViewController: UIViewController {
     }
     
     private var captured = 0{
-        didSet {}
         willSet(i) {
             
             switch (i) {
