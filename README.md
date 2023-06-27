@@ -20,9 +20,11 @@ This application uses [SwiftData](https://developer.apple.com/xcode/swiftdata/) 
 
 ## Interface
 
-![](docs/images/ios-altitude-recorder.png)
+![](docs/images/ios-altitude-recorder-xcode.png)
 
 The interface provides controls to record atomic locations or to record all (unique) locations as they are reported by the operating system. Locations are persisted using `SwiftData` and can be exported as a GeoJSON `FeatureCollection` using the iOS ShareActivity interface menu.
+
+![](docs/images/ios-altitude-recorder.png)
 
 ## Output
 
