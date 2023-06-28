@@ -155,13 +155,14 @@ class ViewController: UIViewController {
     @IBAction
     func exportLocations() {
         
+        
         let featurecollection = asFeatureCollection()
         let json: Data?
         
         do {
             json = try JSONEncoder().encode(featurecollection)
-        } catch  {
-            print("SAD") // To do: Display alert
+        } catch {
+            alert(message: "Failed to encode features: \(error)")
             return
         }
         
@@ -219,7 +220,7 @@ class ViewController: UIViewController {
                               options: .atomic)
 
         } catch {
-            print("SAD") // To do: Display alert
+            alert(message: "Failed to generate temporary file for features: \(error)")
             return
         }
         
@@ -278,6 +279,15 @@ class ViewController: UIViewController {
         }
         
         return count
+    }
+    
+    private func alert(message: String) {
+        
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
