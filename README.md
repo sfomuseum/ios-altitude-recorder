@@ -38,6 +38,6 @@ Note that the `LineString` feature derived from those points was generated indep
 
 ![](docs/images/ios-altitude-recorder-qgis-2.png)
 
-As you can see indoor location often remains approximate and imprecise. You should factor that knowledge in to how you use and interpret the data produced by `ios-altitude-recorder`.
+As you can see indoor location continues to be approximate and imprecise. You should factor that knowledge in to how you use and interpret the data produced by `ios-altitude-recorder`.
 
 ![](docs/images/ios-altitude-recorder-osm.png)
